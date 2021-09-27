@@ -1,0 +1,23 @@
+@import "vars"
+
+.breadcrumb
+    min-height: 50px
+    padding: 0 16px
+    .breadcrumb__inner
+        padding: 10px 0px
+        font-size: 12px
+        line-height: 30px
+        display: flex
+        align-content: flex-start
+        flex-wrap: wrap
+        .breadcrumb-item:not(:last-child)
+            margin-right: 10px
+        .breadcrumb-item + .breadcrumb-item
+            margin-left: 10px
+            list-style-image: url('../img/breadcrumb.png')
+            list-style-position: outside
+        .breadcrumb-item    
+            .breadcrumb-link
+                color: $color-2
+        .active
+            color: $color-9
